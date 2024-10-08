@@ -13,6 +13,9 @@ import streamlit as st
 data_path = './data'
 module_path = './modules'
 
+# 라이브러리 충돌 방지
+os.environ['KMP_DUPLICATE_LIB_OK']='True'
+
 # Gemini 설정
 import google.generativeai as genai
 
